@@ -1,6 +1,6 @@
 <div align="center">
 
-# Excuses · Вернёмся Сильнее
+# Excuses
 
 **A satirical CS2 excuse generator. 0 trophies · ∞ excuses.**
 
@@ -27,7 +27,7 @@ Your team just lost the Major final 2:13? Don't analyse the demo. Just press **g
 
 <br>
 
-<a href="https://thayorns.github.io/excuses/"><img src="assets/demo.gif" alt="Scrolling through the story: every role in a losing CS2 team gets its own map, weapon and excuse" width="880"></a>
+<a href="https://thayorns.github.io/excuses/"><img src="assets/demo.webp" alt="Scrolling through the story: every role in a losing CS2 team gets its own map, weapon and excuse" width="880"></a>
 
 </div>
 
@@ -37,29 +37,11 @@ Your team just lost the Major final 2:13? Don't analyse the demo. Just press **g
 
 After every elimination, pro CS2 teams post the same thing: *“Tough day. Thanks for the support. We'll come back stronger ❤️”*. Then they lose again, and the post comes back too.
 
-**Excuses** (Russian: *«Вернёмся сильнее»*, “We'll come back stronger”) is a one-page scrollytelling site that collects these excuses, sorts them by who writes them, counts them with completely made-up statistics, and finally automates the whole thing with a generator that writes a fresh post-match excuse in about a second.
+**Excuses** is a one-page scrollytelling site that collects these excuses, sorts them by who writes them, counts them with completely made-up statistics, and finally automates the whole thing with a generator that writes a fresh post-match excuse in about a second.
 
 It is a single, self-contained `index.html`: no framework, no bundler, no backend, no tracking. Open it and it works.
 
 ## Features
-
-### 🎬 Scroll story: who writes the excuses
-
-A pinned stage that changes as you scroll, inspired by product landing pages. Each chapter has its own CS2 map backdrop, colour palette, weapon, ammo and a phone screen that acts out the role:
-
-| # | Role | Map | On screen |
-|---|------|-----|--------------|
-| 0 | **You** (the fan) | Major final | Scoreboard 2:13, the team mumbling “ping…” |
-| 1 | **Everyone** | de_dust2 | The app splash: *0 trophies · ∞ excuses* |
-| 2 | **Captains** | de_mirage | A to-do list ending with “write *we'll be back*” |
-| 3 | **Coaches** | de_nuke | Demo review 18%, hotel pool 100% |
-| 4 | **PR teams** | de_inferno | Statement template No. 1, only the opponent changes |
-| 5 | **Fans** | de_anubis | Auto-replies: “kick the fifth” → reply with a heart |
-| 6 | **Analysts** | de_ancient | Excuse reserves: ping → server → subtick → wind on Nuke |
-| 7 | **IGL** | de_vertigo | 20 calls, all of them wrong |
-| 8 | **Subs** | de_train | Role picker: AWP, entry, support, IGL… streamer fits |
-
-Chapter headlines are random posts from the generator, so the story reads differently on every visit. The progress bar is a row of cartridges, and the birds on the de_dust2 wires take off when the AWP chapter ends.
 
 ### 📱 Excuse generator
 
@@ -140,7 +122,7 @@ The only external request is Google Fonts (Manrope, Onest, JetBrains Mono). With
 ```
 excuses/
 ├── index.html      # the whole app: markup, styles, scripts and all data
-├── assets/         # README screenshots and demo GIF
+├── assets/         # README screenshots and demo animation
 ├── LICENSE
 └── README.md
 ```
