@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/logo.png" alt="Excuses logo" width="128" height="128">
+
 # Excuses
 
 **A satirical CS2 excuse generator. 0 trophies · ∞ excuses.**
@@ -122,7 +124,7 @@ The only external request is Google Fonts (Manrope, Onest, JetBrains Mono). With
 ```
 excuses/
 ├── index.html      # the whole app: markup, styles, scripts and all data
-├── assets/         # README screenshots and demo animation
+├── assets/         # logo, README screenshots and demo animation
 ├── LICENSE
 └── README.md
 ```
