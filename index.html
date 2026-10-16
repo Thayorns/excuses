@@ -38,10 +38,10 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .nav { position: fixed; inset: 0 0 auto 0; z-index: 30; height: calc(var(--nav-h) + env(safe-area-inset-top, 0px)); padding: env(safe-area-inset-top, 0px) 16px 0; background: rgba(21, 19, 17, .92); backdrop-filter: blur(10px); }
 .nav-in { max-width: 1240px; height: var(--nav-h); margin: 0 auto; display: flex; align-items: center; gap: 22px; }
 .brand { display: inline-flex; align-items: center; gap: 9px; text-decoration: none; font-family: var(--font-display); font-weight: 800; font-size: 1.3rem; letter-spacing: -.04em; }
-.brand svg { width: 26px; height: 30px; flex: none; }
+.brand svg { width: 34px; height: 34px; flex: none; }
 .brand { white-space: nowrap; }
 @media (max-width: 440px) { .brand { font-size: 1.05rem; } .nav-in { gap: 12px; } .nav .pill.blue { padding: 9px 13px; font-size: .86rem; } }
-@media (max-width: 380px) { .brand { font-size: .95rem; gap: 7px; } .brand svg { width: 22px; height: 26px; } .nav .pill.blue { padding: 8px 11px; font-size: .82rem; } }
+@media (max-width: 380px) { .brand { font-size: .95rem; gap: 7px; } .brand svg { width: 28px; height: 28px; } .nav .pill.blue { padding: 8px 11px; font-size: .82rem; } }
 /* Language switcher: two flags, the active one highlighted; it sits last in the navbar so it does not shift
    when Russian and English labels have different widths. On narrow screens only the flags are shown */
 .lang { display: inline-flex; flex: none; gap: 2px; padding: 3px; border: 1px solid var(--line); border-radius: 999px; background: #2b2622; }
@@ -774,7 +774,7 @@ footer .copy { color: var(--ink); font-weight: 600; }
 <script>try { if (localStorage.getItem("vs-lang") === "en") { document.documentElement.classList.add("en-wait"); document.documentElement.lang = "en"; } } catch (e) {}</script>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="hex" viewBox="0 0 52 60"><polygon points="26,1 51,15.5 51,44.5 26,59 1,44.5 1,15.5" fill="#f58220"/><text x="26" y="35.6" text-anchor="middle" font-family="Manrope, sans-serif" font-weight="800" font-size="15" fill="#fff8ee">CS2</text></symbol>
+  <symbol id="logo" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#171412"/><path d="M112 110H400A40 40 0 0 1 440 150V320A40 40 0 0 1 400 360H230L156 422V360H112A40 40 0 0 1 72 320V150A40 40 0 0 1 112 110Z" fill="#f58220"/><path fill="#171412" fill-rule="evenodd" d="M179.5 304.4C157.2 300.9 141.9 287.3 136.6 265.9C134.6 257.6 134.5 240.7 136.5 232.1C140.8 213.9 154.3 199.7 171.9 194.8C180.0 192.6 195.3 192.4 203.3 194.5C221.1 199.1 233.6 211.6 238.4 229.5C239.3 232.8 240.3 240.3 240.7 246.2L241.3 257.0L204.5 257.0L167.7 257.0L168.4 261.2C169.5 268.0 172.8 273.8 177.3 276.8C180.5 278.9 182.8 279.6 188.6 279.8C197.5 280.3 203.7 277.8 207.0 272.4C208.2 270.5 209.2 269.0 209.3 269.0C211.8 269.2 238.4 274.1 238.8 274.5C239.7 275.3 235.4 283.7 231.8 288.1C223.9 297.9 209.4 304.0 192.5 304.5C187.0 304.7 181.2 304.6 179.5 304.4ZM253.0 275.0L269.9 247.1L254.5 221.1C246.0 206.8 239.0 194.8 239.0 194.5C239.0 194.2 247.0 194.1 256.8 194.2L274.5 194.5L283.4 212.2L292.4 229.9L301.5 212.2L310.7 194.5L328.4 194.2C342.5 194.0 346.1 194.2 345.7 195.2C345.4 195.9 338.2 207.9 329.7 221.9L314.1 247.2L323.4 262.4C334.8 280.9 347.1 301.2 347.7 302.2C347.9 302.7 340.1 303.0 330.3 303.0L312.4 303.0L305.8 290.8C302.1 284.0 297.5 275.1 295.5 270.9L291.8 263.4L281.8 283.2L271.8 303.0L253.9 303.0L236.0 303.0L253.0 275.0ZM207.8 232.8C205.9 224.1 199.7 218.3 191.2 217.3C180.0 216.0 171.4 222.5 168.6 234.2L168.0 237.0L188.4 237.0L208.8 237.0L207.8 232.8Z"/><circle cx="371.5" cy="291.5" r="16" fill="#2f62f0"/></symbol>
   <!-- Weapons: side view, barrel to the right -->
   <symbol id="w-awp" viewBox="0 0 320 84">
     <path d="M4 26 H74 L88 34 V56 H66 L56 42 H26 V64 H4 Z" fill="#4c7a52"/>
@@ -968,7 +968,7 @@ footer .copy { color: var(--ink); font-weight: 600; }
 
 <header class="nav">
   <div class="nav-in">
-    <a class="brand" href="#top"><svg aria-hidden="true"><use href="#hex"/></svg>Отмазки</a>
+    <a class="brand" href="#top"><svg aria-hidden="true"><use href="#logo"/></svg>Отмазки</a>
     <nav class="links" aria-label="Разделы"><a href="#generator">генератор</a><a href="#statistics">статистика</a><a href="#phrasebook">разговорник</a></nav>
     <a class="pill blue" href="#generator">сгенерировать →</a>
     <button class="lang" id="langBtn" type="button" data-lang="ru" aria-label="Переключить на английский (English)"><span class="lf" data-l="ru"><svg viewBox="0 0 9 6" aria-hidden="true"><path fill="#fff" d="M0 0h9v2H0z"/><path fill="#0039a6" d="M0 2h9v2H0z"/><path fill="#d52b1e" d="M0 4h9v2H0z"/></svg><b>RU</b></span><span class="lf" data-l="en"><svg viewBox="0 0 60 30" aria-hidden="true"><path fill="#012169" d="M0 0h60v30H0z"/><path stroke="#fff" stroke-width="6" d="M0 0l60 30M60 0L0 30"/><path stroke="#c8102e" stroke-width="3" d="M0 0l60 30M60 0L0 30"/><path stroke="#fff" stroke-width="10" d="M30 0v30M0 15h60"/><path stroke="#c8102e" stroke-width="6" d="M30 0v30M0 15h60"/></svg><b>EN</b></span></button>
@@ -1047,7 +1047,7 @@ footer .copy { color: var(--ink); font-weight: 600; }
             <div class="status"><span>2:13</span><span class="ic"><svg width="16" height="10" viewBox="0 0 16 10" aria-hidden="true"><rect x="0" y="7" width="3" height="3" rx=".6" fill="currentColor"/><rect x="4.3" y="5" width="3" height="5" rx=".6" fill="currentColor"/><rect x="8.6" y="2.5" width="3" height="7.5" rx=".6" fill="currentColor" opacity=".35"/><rect x="12.9" y="0" width="3" height="10" rx=".6" fill="currentColor" opacity=".35"/></svg><svg width="24" height="11" viewBox="0 0 24 11" aria-hidden="true"><rect x=".7" y=".7" width="20" height="9.6" rx="2.6" fill="none" stroke="currentColor" stroke-opacity=".5" stroke-width="1.2"/><rect x="2.4" y="2.4" width="3.2" height="6.2" rx="1" fill="#ff5a3c"/><rect x="21.8" y="3.6" width="1.6" height="3.8" rx=".8" fill="currentColor" opacity=".5"/></svg></span></div>
             <!-- 0. Intro -->
             <div class="sc on" data-c="1" style="justify-content:center;align-items:center;text-align:center;gap:12px;background:radial-gradient(circle at 50% 40%,#36302b,#1d1d22 72%)">
-              <svg viewBox="0 0 52 60" width="66" height="76" aria-hidden="true"><use href="#hex"/></svg>
+              <svg viewBox="0 0 512 512" width="72" height="72" aria-hidden="true"><use href="#logo"/></svg>
               <div class="ph-brand">вернёмся<br>сильнее</div>
               <div class="ph-mono">0 трофеев · ∞ отмазок</div>
               <span class="btnx" style="padding:8px 16px;font-size:10.5px;margin-top:6px">сгенерировать →</span>
