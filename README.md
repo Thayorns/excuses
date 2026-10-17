@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="assets/logo.png" alt="Excuses logo" width="128" height="128">
+<img src="assets/logo.png" alt="excuses logo" width="128" height="128">
 
-# Excuses
+# excuses
 
 **A satirical CS2 excuse generator. 0 trophies · ∞ excuses.**
 
